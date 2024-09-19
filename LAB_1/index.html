@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+
+<body>
+    <h1 style="text-align: center; margin-bottom: 0;">CSS</h1>
+    <p style="margin-top: 5px; text-indent: 20px; text-align: justify; font-size: 20px;"> <b>CSS</b> (<a href="https://ru.wikipedia.org/wiki/Английский_язык">англ.</a>
+        <span style="font-style: italic;">Cascading Style Sheets</span>«каскадные таблицы стилей») —
+        <a href="https://ru.wikipedia.org/wiki/Формальный_язык">формальный язык</a> декодирования и описания внешнего
+        вида документа (<a href="https://ru.wikipedia.org/wiki/Веб-страница">веб-страницы</a>), написанного с
+        использованием языка разметки (чаще всего <a href="https://ru.wikipedia.org/wiki/HTML">HTML</a> или <a
+            href="https://ru.wikipedia.org/wiki/XHTML">XHTML</a>). Также
+        может применяться к любым <a href="https://ru.wikipedia.org/wiki/XML">XML-документам</a>, например, к <a
+            href="https://ru.wikipedia.org/wiki/SVG">SVG</a> или <a href="https://ru.wikipedia.org/wiki/XUL">XUL</a>.
+    </p>
+
+    <h2 style="text-align: center; margin-bottom: 0;">Использование CSS</h2>
+    <p style="margin-top: 5px; text-indent: 20px; text-align: justify; font-size: 20px;"> CSS используется создателями <a href="https://ru.wikipedia.org/wiki/Веб-страница">веб-страниц</a> для задания <a href="https://ru.wikipedia.org/wiki/Цвет">цветов</a>, <a href="https://ru.wikipedia.org/wiki/Шрифт">шрифтов</a>, стилей, расположения отдельных блоков и
+        других аспектов представления внешнего вида этих веб-страниц. Основной целью разработки CSS является ограждение
+        и отделение описания логической структуры веб-страницы (которое производится с помощью <a href="https://ru.wikipedia.org/wiki/HTML">HTML</a> или других
+        <a href="https://ru.wikipedia.org/wiki/Язык_разметки">языков разметки</a>) от описания внешнего вида этой веб-страницы (которое теперь производится с помощью
+        формального языка CSS). Такое разделение может увеличить доступность документа, предоставить большую гибкость и
+        возможность управления его представлением, а также уменьшить сложность и повторяемость в структурном содержимом.
+    </p>
+    <p style="text-indent: 20px; text-align: justify; font-size: 20px;"> Кроме того, CSS позволяет представлять один и тот же документ в различных стилях или <a href="https://ru.wikipedia.org/wiki/Метод">методах</a> вывода, таких как
+        экранное представление, печатное представление, чтение голосом (специальным голосовым браузером или программой
+        чтения с экрана) или при выводе устройствами, использующими <a href="https://ru.wikipedia.org/wiki/Шрифт_Брайля">шрифт Брайля</a> <sup>[<a href="https://ru.wikipedia.org/wiki/Википедия:Ссылки_на_источники">источник не указан 1722 дня</a>]</sup>.
+    </p>
+
+    <h2 style="text-align: center; margin-bottom: 0;">Способы подключения CSS к документу</h2>
+    <p style="margin-bottom: 0; margin-top: 5px;">
+        <ul style="margin-top: 0; text-align: justify; font-size: 20px;">
+            <li>Когда описание стилей находится в отдельном файле, оно может быть подключено к документу посредством элемента <b style="color: rgb(225, 87, 36);">&lt;link&gt;</b>, включённого в элемент <b style="color: rgb(225, 87, 36);">&lt;head&gt;</b>;</li>
+            <li>Когда файл стилей размещается отдельно от родительского документа, он может быть подключён к документу инструкцией @import в элементе <b style="color: rgb(225, 87, 36);">&lt;style&gt;</b>;</li>
+            <li>Когда стили описаны внутри документа, они могут быть включены в элемент &lt;style&gt;, который, включается в элемент <b style="color: rgb(225, 87, 36);">&lt;head&gt;</b>;</li>
+            <li>Когда стили описаны в теле документа, они могуть располагаться в атрибутах отдельного элемента;</li>
+        </ul>
+    </p>
+    <p style="text-indent: 20px; text-align: justify; font-size: 20px;">
+        В первых двух случаях к документу применены <i style="color: rgb(6, 45, 238);">внешние стили</i>, а во вторых - <i style="color:rgb(88, 13, 169);">внутренние стили</i>.
+    </p>
+
+    <table border="2" align="center" style="text-align: left; width: 430px;height: auto; font-size: 18px;">
+        <tr style="text-align: center;">
+            <th colspan="2">CSS</th>
+        </tr>
+        <tr style="text-align: center;">
+            <th colspan="2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1280px-CSS3_logo.svg.png" alt="CSS" width="100" height="auto"></th>
+        </tr>
+        <tr>
+            <th>Расширение</th>
+            <td>.css</td>
+        </tr>
+        <tr>
+            <th>MIME-тип</th>
+            <td>text/css</td>
+        </tr>
+        <tr>
+            <th>Разработчик</th>
+            <td><a href="https://ru.wikipedia.org/wiki/CSS_Working_Group">CSS Working Group</a></td>
+        </tr>
+        <tr>
+            <th>Опубликован</th>
+            <td><a href="https://ru.wikipedia.org/wiki/17_декабря">17 декабря</a><a href="https://ru.wikipedia.org/wiki/1996_год">1996</a></td>
+        </tr>
+        <tr>
+            <th>Тип формата</th>
+            <td><a href="https://ru.wikipedia.org/wiki/Язык_таблиц_стилей">Язык таблиц стилей</a></td>
+        </tr>
+        <tr>
+            <th rowspan="3">Стандарт(ы)</th>
+            <td><a href="https://www.w3.org/TR/CSS1/">Level 1 (Recommendation)</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.w3.org/TR/CSS2/">Level 2 (Recommendation)</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.w3.org/TR/CSS21/">Level 2 Revision 1 (Recommendation)</a></td>
+        </tr>
+        <tr>
+            <th rowspan="2">Сайт</th>
+            <td><a href="https://www.w3.org/Style/CSS/">w3.org/Style/CSS/</a></td>
+        </tr>
+        <tr>
+            <td><a href="https://drafts.csswg.org/">drafts.csswg.org</a></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
