@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+    
+/*----------Оформление шапки----------*/
+header {
+    padding: 1% 5% 1% 5%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(234, 236, 240);
+    align-items: center;
+}
+.variant {
+    display: flex;
+    align-items: center;
+    
+}
+.variant span {
+    color: rgb(53, 65, 83);
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.variant img {
+    width: 50px;
+    height: 50px;
+}
+path {
+    fill:#0C1421;
+}
+.icon img {
+    height: 100%;
+    width: auto;
+}
+    
+/*----------Оформление навигации----------*/
+nav {
+    display: flex;
+    margin: 60px 5% 40px 5%;
+}
+.buttons {
+    border: 2px solid rgb(234, 236, 240);
+    padding: 10px;
+    border-right: none;
+}
+.buttons a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(53, 65, 83);
+    font-weight: bold;
+}
+.buttons:first-child {
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgb(243, 244, 248);
+}
+.buttons:last-of-type {
+    border-radius: 0px 10px 10px 0px;
+    border-right: 2px solid rgb(234, 236, 240);
+}
+select {
+    border: 2px solid rgb(234, 236, 240);
+    padding: 9.5px;
+    margin-left: auto;
+    font-size: 20px;
+    color: rgb(53, 65, 83);
+    font-weight: bold;
+    border-radius: 10px;
+}
+option {
+    font-size: 18px;
+    color: rgb(13, 20, 33);
+}
+    
+/*----------Оформление контента----------*/
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 5% 5% 5%;
+}
+article {
+    border: 2px solid rgb(234, 236, 240);
+    border-radius: 20px;
+    width: 20%;
+    height: 750px;
+    padding: 25px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+}
+.card_header {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(102, 112, 133);
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+.pictures {
+    width: auto;
+    height: 300px;
+}
+.pictures img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.text_1, .text_2{
+    padding-top: 15px;
+}
+.text_1 p {
+    color: rgb(13, 20, 33);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.text_p {
+    color: rgb(53, 65, 83);
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+    
+/*----------Оформление футера----------*/
+footer {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: auto;
+    padding-bottom: 40px;
+}
+footer p {
+    color: rgb(53, 65, 83);
+    font-size: 20px;
+    font-family: 'Arial';
+}
