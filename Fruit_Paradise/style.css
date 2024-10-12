@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Jura", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    gap: 10%;
+    margin: 4% 8% 0 8%;
+    color: #292929;
+}
+
+.logotip {
+    display: grid;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: end;
+    gap: 10px;
+}
+
+nav a {
+    border: 1px solid black;
+    color: #292929;
+    text-decoration: none;
+    width: 120px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+}
+
+.nav_buy_button {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    height: 33px;
+    width: 120px;
+    border: 1px solid #888888;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    padding: 0 12px;
+    color:#838383;
+    cursor: pointer;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: 5% 8% 0 8%;
+    gap: 40px;
+    margin-bottom: 6.5%;
+}
+
+.picture {
+    aspect-ratio: 320 / 370;
+    display: grid;
+    justify-content: end;
+    background-size: cover; 
+    background-position: center;
+}
+
+.picture img {
+    width: 40px;
+    height: 40px;
+    margin-top: 11px;
+    margin-right: 19px;
+}
+
+.Banana .picture {
+    background-image: url("Pictures/Banana.png");
+}
+.Cherry .picture {
+    background-image: url("Pictures/Cherry.png");
+}
+.Orange .picture {
+    background-image: url("Pictures/Orange.png");
+}
+.Pineapple .picture {
+    background-image: url("Pictures/Pineapple.png");
+}
+.Avocado .picture {
+    background-image: url("Pictures/Avocado.png");
+}
+.Melon .picture {
+    background-image: url("Pictures/Melon.png");
+}
+
+.description {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.text_fruit {
+    text-align: left;
+    color: #292929;
+}
+
+.text_price {
+    text-align: right;
+    color: #878787;
+}
+
+.buy_button {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    height: 37px;
+    width: 100%;
+    align-items: center;
+    border: 1px solid #888888;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    color:#838383;
+    cursor: pointer;
+}
+
+footer {
+    display: grid;
+    align-items: center;
+    background-color: #EDEDED;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 29px;
+    color: #ababab;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+@media (width < 825px) {
+    nav {
+        grid-template-columns: 1fr;
+    }
+    nav a {
+        text-align: right;
+    }
+    header {
+        align-items: center;
+    }
+}
