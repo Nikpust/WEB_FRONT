@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 0.75% 8.35%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-bottom: 2px solid rgb(234, 236, 240);
+    align-items: center;
+}
+
+.variant {
+    display: flex;
+    align-items: center;
+}
+
+.variant span {
+    color: rgb(53, 65, 83);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    padding-left: 16px;
+}
+
+.variant img {
+    width: 32px;
+    height: 32px;
+}
+
+.icon {
+    height: 100%;
+    width: auto;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin: 1.96% 8.35% 0 8.35%;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: start;
+}
+
+.buttons {
+    border: 1px solid rgb(234, 236, 240);
+    border-right: none;
+    display: grid;
+    align-items: center;
+    height: 40px;
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgb(53, 65, 83);
+    padding: 0 15px;
+}
+
+.buttons:first-child {
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgb(243, 244, 248);
+}
+
+.buttons:last-of-type {
+    border-radius: 0px 10px 10px 0px;
+    border-right: 1px solid rgb(234, 236, 240);
+}
+
+select {
+    border: 2px solid rgb(234, 236, 240);
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgb(53, 65, 83);
+    border-radius: 10px;
+    height: 40px;
+}
+
+option {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(13, 20, 33);
+}
+    
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(376px, 0.7fr));
+    justify-content: center;
+    gap: 30px;
+    margin: 1.1% 8.35% 5% 8.35%;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(234, 236, 240);
+    border-radius: 10px;
+    aspect-ratio: 376 / 600;
+    padding: 25px 20px;
+    overflow: hidden;
+}
+
+.card_header {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    color: rgb(102, 112, 133);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 14px;
+}
+
+.pictures {
+    aspect-ratio: 320 / 225;
+}
+
+.pictures img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text_1, .text_2 {
+    padding-top: 15px;
+}
+
+.text_2 {
+    overflow: hidden;
+}
+
+.text_1 p {
+    color: rgb(13, 20, 33);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+}
+.text_2 p {
+    color: rgb(53, 65, 83);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-left: 8.35%;
+    margin-right: 8.35%;
+    margin-top: auto;
+    padding-bottom: 24px;
+}
+
+footer p {
+    color: rgb(53, 65, 83);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@media (width < 800px) {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin: 1.96% 8.35% 1% 8.35%;
+    }
+    .navigation {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .buttons a {
+        text-align: center;
+    }
+}
+
+@media (width < 622px) {
+    .navigation {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .buttons:first-child {
+        border-radius: 10px 0 0 0;
+        background-color: rgb(243, 244, 248);
+    }
+    .buttons:nth-child(2) {
+        border-right: 1px solid rgb(234, 236, 240);
+        border-radius: 0 10px 0 0;
+    }
+    .buttons:nth-child(3) {
+        border-radius: 0 0 0 10px;
+    }
+    .buttons:last-of-type {
+        border-radius: 0 0 10px 0;
+        border-right: 1px solid rgb(234, 236, 240);
+    }
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(299px, 0.7fr));
+        margin: 1% 8.35% 5% 8.35%;
+    }
+    article {
+        aspect-ratio: 376 / 710;
+    }
+}
