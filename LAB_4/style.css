@@ -34,16 +34,19 @@ header {
     font-weight: 600;
     line-height: 32px;
     padding-left: 16px;
+    animation: show_text 8s infinite linear;
 }
 
 .variant img {
     width: 32px;
     height: 32px;
+    animation: pulse 2s infinite linear;
 }
 
 .icon {
     height: 100%;
     width: auto;
+    animation: slide_right 1s ease-in;
 }
 
 nav {
@@ -56,6 +59,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(4, auto);
     justify-content: start;
+    animation: slide_left 1s ease-in;
 }
 
 .buttons {
@@ -85,24 +89,84 @@ nav {
     border-right: 1px solid rgb(234, 236, 240);
 }
 
-select {
-    border: 2px solid rgb(234, 236, 240);
-    padding: 0 15px;
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    animation: slide_right 1s ease-in;
+  }
+  
+  .dropdown_button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+
+    height: 40px;
+    width: 100%;
+
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    color: rgb(53, 65, 83);
-    border-radius: 10px;
-    height: 40px;
-}
+    color: #354153;
 
-option {
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #EAECF0;
+    border-radius: 10px;
+
+    padding: 0px 16px;
+  }
+  
+  .dropdown_button:hover {
+    background-color: #F2F4F7;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 1;
+    width: 220px;
+    right: 0;
+  }
+  
+  .dropdown-content a {
+    text-decoration: none;
+    
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    color: rgb(13, 20, 33);
-}
+    color: #354153;
+    padding: 6px 16px;
+    margin: 4px;
+    border-radius: 6px;
     
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+
+  .dropdown-content a:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .dropdown-content a:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #F2F4F7;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
 
 main {
     display: grid;
@@ -110,7 +174,9 @@ main {
     justify-content: center;
     gap: 30px;
     margin: 1.1% 8.35% 5% 8.35%;
+    animation: slide_up 1s forwards;
 }
+
 article {
     display: flex;
     flex-direction: column;
@@ -119,6 +185,10 @@ article {
     aspect-ratio: 376 / 600;
     padding: 25px 20px;
     overflow: hidden;
+}
+
+article:hover {
+    animation: for_article 1s forwards;
 }
 
 .card_header {
@@ -169,6 +239,7 @@ footer {
     margin-right: 8.35%;
     margin-top: auto;
     padding-bottom: 24px;
+    animation: slide_up 1.2s ease-in;
 }
 
 footer p {
@@ -192,9 +263,15 @@ footer p {
     .buttons a {
         text-align: center;
     }
+    .dropdown_button {
+        justify-content: space-between;
+    }
+    .dropdown-content {
+        width: 100%;
+    }
 }
 
-@media (width < 622px) {
+@media (width < 635px) {
     .navigation {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -219,5 +296,67 @@ footer p {
     }
     article {
         aspect-ratio: 376 / 710;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.2;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+@keyframes show_text {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+
+}
+
+@keyframes slide_up {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slide_left {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide_right {
+    0% {
+        transform: translateX(500%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes for_article {
+    100% {
+        background-color: #F2F4F7;
+        transform: scale(1.05);
     }
 }

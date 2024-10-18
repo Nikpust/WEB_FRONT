@@ -29,11 +29,17 @@
             <div class="buttons"><a href="#">Спорт</a></div>
             <div class="buttons"><a href="#">Общество</a></div>
         </div>
-        <select>
-            <option>По умлочанию</option>
-            <option>Сначала новые</option>
-            <option>Сначала старые</option>
-        </select>
+        <div class="dropdown">
+            <button class="dropdown_button" id="dropdown_btn">
+              <p>По умолчанию</p>
+              <img src="Pictures/arrow.svg" alt="" class="arrow">
+            </button>
+            <div class="dropdown-content">
+              <a href="#">По умолчанию</a>
+              <a href="#">Сначала новые</a>
+              <a href="#">Сначала старые</a>
+            </div>
+        </div>
     </nav>
 
     <main>
@@ -171,6 +177,14 @@
             &copy; Вариант 5. Клименко Никита, группа ПИ-22-1
         </p>
     </footer>
+
+    <script>
+        document.querySelectorAll('.dropdown-content a').forEach(item => {
+          item.onclick = () => {
+            document.getElementById('dropdown_btn').innerHTML = `<p>${item.textContent}</p> <img src="Pictures/arrow.svg" alt="" class="arrow">`;
+          };
+        });
+    </script>
 
 </body>
 
