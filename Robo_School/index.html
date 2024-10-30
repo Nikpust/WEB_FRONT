@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>ROBO SCHOOL</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <p class="first-in-nav">ROBO.SHOOL</p>
+            <div class="nav-link">
+                <a href="#information-about-school">О школе</a>
+                <a href="#information-about-treners">Тренеры</a>
+                <a href="#price">Стоимость</a>
+            </div>
+            <div class="hidden-block">
+                <div class="background-border">
+                    <div class="button-phone"><img src="Pictures/сall.svg" alt="">
+                        <p class="number">+7 800 000 11 22</p>
+                    </div>
+                </div>
+                <input type="checkbox" id="window-menu" class="chekbox-menu" onclick="scroll_bar()">
+                <div class="modal-menu">
+                    <div class="div-button-close-menu">
+                        <label for="window-menu" class="button-close-menu">&#10006;</label>
+                    </div>
+                    <div class="modal-nav-link">
+                        <a href="#information-about-school" onclick="closeMenu()">О школе</a>
+                        <a href="#information-about-treners" onclick="closeMenu()">Тренеры</a>
+                        <a href="#price" onclick="closeMenu()">Стоимость</a>
+                    </div>
+                </div>
+                <div class="background-border">
+                    <label for="window-menu" class="button-menu">&#9776;</label>
+                </div>
+            </div>
+            <p class="last-in-nav">+7 800 000 11 22</p>
+        </nav>
+        <div class="header-information">
+            <div class="information-block">
+                <p class="title">ROBO SCHOOL</p>
+                <p class="discription">Курсы повешения квалификации по робототехнике для педагогов начальной школы</p>
+                <a href="#registration" class="link-signup">Записаться на курс</a>
+            </div>
+            <div class="image">
+                <img src="Pictures/logotip.png" alt="logotip">
+            </div>
+        </div>
+
+        <div class="header-information-mobile">
+            <div class="information-block">
+                <p class="title">ROBO SCHOOL</p>
+                <p class="discription">Курсы повешения квалификации по робототехнике для педагогов начальной школы</p>
+            </div>
+            <div class="image">
+                <a href="#registration" class="link-signup">Записаться на курс</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="section-one" id="information-about-school">
+        <p class="section-one-text"><span class="text-bold">Robo Shool – </span>учреждение для формирования кадрового педагогического резерва в сфере робототехники и программирования</p>
+        <div class="box-article-section-one">
+            <article>
+                <p class="section-one-article-title">10</p>
+                <p class="section-one-article-text">УМК по различным направлениям по робототехнике</p>
+            </article>
+            <article>
+                <p class="section-one-article-title">20</p>
+                <p class="section-one-article-text">Школ, в которых запущена робототехника</p>
+            </article>
+            <article>
+                <p class="section-one-article-title">109</p>
+                <p class="section-one-article-text">Педагогов прошедших курсы повышения квалификации</p>
+            </article>
+            <article>
+                <p class="section-one-article-title">10 000</p>
+                <p class="section-one-article-text">Обученных детей на базе собственных центров</p>
+            </article>
+        </div>
+    </div>
+
+    <div class="section-two">
+        <p class="section-two-title">Что вы получите после курса</p>
+        <div class="box-article-section-two">
+            <article>
+                <p class="section-two-article-title">Удостоверение</p>
+                <p class="section-two-article-text">Дающее право преподавать робототехнику для детей 6-12 лет в образовательных учреждениях</p>
+            </article>
+            <article>
+                <p class="section-two-article-title">Знания</p>
+                <p class="section-two-article-text">По основам разработки учебно-методических комплексов по робототехнике и программированию</p>
+            </article>
+            <article>
+                <div class="special-title">
+                    <p class="section-two-article-title">Практику</p>
+                    <p class="hint">i
+                        <span class="tooltip-text">При наличии свободных мест</span>
+                    </p>
+                </div>
+                <p class="section-two-article-text">Возможность пройти практику по преподаванию робототехники на базе R:ED LAB (в оффлайн или онлайн формате)</p>
+            </article>
+        </div>
+    </div>
+
+    <div class="section-three" id="information-about-treners">
+        <p class="section-three-title">Профессиональные тренеры</p>
+        <div class="section-three-carousel">
+            <article>
+                <div class="image-treners">
+                    <img src="Pictures/irina.png" alt="">
+                </div>
+                <p class="section-three-carousel-fullname">Ирина Лайм</p>
+                <p class="section-three-carousel-discipline">преподаватель по робототехнике</p>
+                <label for="modal-window-irina" class="section-three-carousel-information-about-trener">Подробнее</label>
+            </article>
+            <article>
+                <div class="image-treners">
+                    <img src="Pictures/marina.png" alt="Марина Орлова">
+                </div>
+                <p class="section-three-carousel-fullname">Марина Орлова</p>
+                <p class="section-three-carousel-discipline">преподаватель по робототехнике</p>
+                <label for="modal-window-marina" class="section-three-carousel-information-about-trener">Подробнее</label>
+            </article>
+            <article>
+                <div class="image-treners">
+                    <img src="Pictures/maksim.png" alt="">
+                </div>
+                <p class="section-three-carousel-fullname">Максим Петров</p>
+                <p class="section-three-carousel-discipline">преподаватель по программированию</p>
+                <label for="modal-window-maksim" class="section-three-carousel-information-about-trener">Подробнее</label>
+            </article>
+            <article>
+                <div class="image-treners">
+                    <img src="Pictures/konstantin.png" alt="">
+                </div>
+                <p class="section-three-carousel-fullname">Константин Назаров</p>
+                <p class="section-three-carousel-discipline">преподаватель по робототехнике</p>
+                <label for="modal-window-konstantin" class="section-three-carousel-information-about-trener">Подробнее</label>
+            </article>
+            <article>
+                <div class="image-treners">
+                    <img src="Pictures/liza.png" alt="">
+                </div>
+                <p class="section-three-carousel-fullname">Лиза Весенняя</p>
+                <p class="section-three-carousel-discipline">преподаватель по программированию</p>
+                <label for="modal-window-liza" class="section-three-carousel-information-about-trener">Подробнее</label>
+            </article>
+        </div>
+        <div class="contols-carousel">
+            <div class="custom-scrollbar" id="customScrollbar">
+                <div class="custom-scrollbar-thumb" id="scrollbarThumb"></div>
+            </div>
+            <div class="arrows">
+                <button class="arrow-left">❮</button>
+                <button class="arrow-right">❯</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="section-four" id="price">
+        <p class="section-four-title">Выберите нужный пакет</p>
+        <div class="box-article-section-four">
+            <article>
+                <p class="name-package">– PRO –</p>
+                <p class="price-package">20.000 ₽</p>
+                <p class="description-package">УМК по робототехнике и программированию</p>
+                <a href="#registration" class="link-signup-article">Оставить заявку</a>
+            </article>
+            <article>
+                <p class="name-package">– ROBO –</p>
+                <p class="price-package">15.000 ₽</p>
+                <p class="description-package">УМК по робототехнике</p>
+                <a href="#registration" class="link-signup-article">Оставить заявку</a>
+            </article>
+            <article>
+                <p class="name-package">– PROG –</p>
+                <p class="price-package">10.000 ₽</p>
+                <p class="description-package">УМК по программированию</p>
+                <a href="#registration" class="link-signup-article">Оставить заявку</a>
+            </article>
+        </div>
+    </section>
+
+    <div class="section-five" id="registration">
+        <div class="sale-iformation">
+            <p class="section-five-title">Запишитесь на курс со скидкой 10%</p>
+            <p class="section-five-discription">Акция действует до 10 марта 2022 года</p>
+        </div>
+        <form>
+            <input type="text" placeholder="Имя">
+            <input type="tel" placeholder="Телефон">
+            <input type="email" placeholder="E-mail">
+            <button type="submit">Сохранить заявку</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-information">
+            <p class="first-in-nav">ROBO.SHOOL</p>
+            <p class="number-footer">+7 800 000 11 22</p>
+        </div>
+        <p class="copyright">&copy; ROBO.SCHOOL</p>
+    </footer>
+
+    <input type="checkbox" id="modal-window-irina" class="modal-switch-irina" onclick="scroll_bar()">
+    <div class="modal">
+        <div class="modal-window">
+            <div class="hidden-close">
+                <label for="modal-window-irina" class="hidden-close-button">&#10006;</label>
+            </div>
+            <div class="modal-header">
+                <div class="modal-image">
+                    <img src="Pictures/irina.png" alt="">
+                </div>
+                <div class="modal-trener">
+                    <p class="modal-name-trener">Ирина Лайм</p>
+                    <p class="modal-discipline">преподаватель по робототехнике</p>
+                    <div class="contacts">
+                        <a href="#" class="FaceBook">
+                            <img src="Pictures/facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="Instagram">
+                            <img src="Pictures/instagram.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <label for="modal-window-irina" class="button-close">Закрыть</label>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown_button">
+                  <p>Образование</p>
+                  <img src="Pictures/drop-dawn-arrow.svg" alt="" class="arrow">
+                </button>
+                <div class="dropdown-content">
+                  <p>Образование</p>
+                  <p>Тренинги</p>
+                  <p>Курсы</p>
+                </div>
+            </div>
+            <div class="modal-nav">
+                <a href="#" class="modal-link-education">Образование</a>
+                <a href="#" class="modal-link-work-experience">Опыт работы</a>
+                <a href="#" class="modal-link-awards">Награды</a>
+            </div>
+            <div class="modal-section">
+                <div class="modal-section-text-one">
+                    <p>Сентябрь 1995 — Июнь 2000</p>
+                    <p>Санкт-Петербургский политехнический университет Петра Великого</p>
+                    <p>Факультет: Компьютерных наук и технологий</p>
+                    <p>Специальность: Математика и компьютерные науки</p>
+                    <p>Форма обучения: Очная</p>
+                </div>
+                <p class="modal-section-title">Курсы и тренниги</p>
+                <div class="modal-section-text-two">
+                    <p>Ноябрь 2020 — Февраль 2021</p>
+                    <p>Программа дополнительного образования «3D Моделирование»</p>
+                    <p>Место проведения: Институт дополнительного образования «Политех»</p>
+                    <p>1. Дополнительный текст: для теста скролл-бара</p>
+                    <p>2. Дополнительный текст: для теста скролл-бара</p>
+                    <p>3. Дополнительный текст: для теста скролл-бара</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="modal-window-marina" class="modal-switch-marina" onclick="scroll_bar()">
+    <div class="modal">
+        <div class="modal-window">
+            <div class="hidden-close">
+                <label for="modal-window-marina" class="hidden-close-button">&#10006;</label>
+            </div>
+            <div class="modal-header">
+                <div class="modal-image">
+                    <img src="Pictures/marina.png" alt="">
+                </div>
+                <div class="modal-trener">
+                    <p class="modal-name-trener">Марина Орлова</p>
+                    <p class="modal-discipline">преподаватель по робототехнике</p>
+                    <div class="contacts">
+                        <a href="#" class="FaceBook">
+                            <img src="Pictures/facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="Instagram">
+                            <img src="Pictures/instagram.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <label for="modal-window-marina" class="button-close">Закрыть</label>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown_button">
+                  <p>Образование</p>
+                  <img src="Pictures/drop-dawn-arrow.svg" alt="" class="arrow">
+                </button>
+                <div class="dropdown-content">
+                  <p>Образование</p>
+                  <p>Тренинги</p>
+                  <p>Курсы</p>
+                </div>
+            </div>
+            <div class="modal-nav">
+                <a href="#" class="modal-link-education">Образование</a>
+                <a href="#" class="modal-link-work-experience">Опыт работы</a>
+                <a href="#" class="modal-link-awards">Награды</a>
+            </div>
+            <div class="modal-section">
+                <div class="modal-section-text-one">
+                    <p>Сентябрь 1995 — Июнь 2000</p>
+                    <p>Санкт-Петербургский политехнический университет Петра Великого</p>
+                    <p>Факультет: Компьютерных наук и технологий</p>
+                    <p>Специальность: Математика и компьютерные науки</p>
+                    <p>Форма обучения: Очная</p>
+                </div>
+                <p class="modal-section-title">Курсы и тренниги</p>
+                <div class="modal-section-text-two">
+                    <p>Ноябрь 2020 — Февраль 2021</p>
+                    <p>Программа дополнительного образования «3D Моделирование»</p>
+                    <p>Место проведения: Институт дополнительного образования «Политех»</p>
+                    <p>1. Дополнительный текст: для теста скролл-бара</p>
+                    <p>2. Дополнительный текст: для теста скролл-бара</p>
+                    <p>3. Дополнительный текст: для теста скролл-бара</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="modal-window-maksim" class="modal-switch-maksim" onclick="scroll_bar()">
+    <div class="modal">
+        <div class="modal-window">
+            <div class="hidden-close">
+                <label for="modal-window-maksim" class="hidden-close-button">&#10006;</label>
+            </div>
+            <div class="modal-header">
+                <div class="modal-image">
+                    <img src="Pictures/maksim.png" alt="">
+                </div>
+                <div class="modal-trener">
+                    <p class="modal-name-trener">Максим Петров</p>
+                    <p class="modal-discipline">преподаватель по программированию</p>
+                    <div class="contacts">
+                        <a href="#" class="FaceBook">
+                            <img src="Pictures/facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="Instagram">
+                            <img src="Pictures/instagram.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <label for="modal-window-maksim" class="button-close">Закрыть</label>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown_button">
+                  <p>Образование</p>
+                  <img src="Pictures/drop-dawn-arrow.svg" alt="" class="arrow">
+                </button>
+                <div class="dropdown-content">
+                  <p>Образование</p>
+                  <p>Тренинги</p>
+                  <p>Курсы</p>
+                </div>
+            </div>
+            <div class="modal-nav">
+                <a href="#" class="modal-link-education">Образование</a>
+                <a href="#" class="modal-link-work-experience">Опыт работы</a>
+                <a href="#" class="modal-link-awards">Награды</a>
+            </div>
+            <div class="modal-section">
+                <div class="modal-section-text-one">
+                    <p>Сентябрь 1995 — Июнь 2000</p>
+                    <p>Санкт-Петербургский политехнический университет Петра Великого</p>
+                    <p>Факультет: Компьютерных наук и технологий</p>
+                    <p>Специальность: Математика и компьютерные науки</p>
+                    <p>Форма обучения: Очная</p>
+                </div>
+                <p class="modal-section-title">Курсы и тренниги</p>
+                <div class="modal-section-text-two">
+                    <p>Ноябрь 2020 — Февраль 2021</p>
+                    <p>Программа дополнительного образования «3D Моделирование»</p>
+                    <p>Место проведения: Институт дополнительного образования «Политех»</p>
+                    <p>1. Дополнительный текст: для теста скролл-бара</p>
+                    <p>2. Дополнительный текст: для теста скролл-бара</p>
+                    <p>3. Дополнительный текст: для теста скролл-бара</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="modal-window-konstantin" class="modal-switch-konstantin" onclick="scroll_bar()">
+    <div class="modal">
+        <div class="modal-window">
+            <div class="hidden-close">
+                <label for="modal-window-konstantin" class="hidden-close-button">&#10006;</label>
+            </div>
+            <div class="modal-header">
+                <div class="modal-image">
+                    <img src="Pictures/konstantin.png" alt="">
+                </div>
+                <div class="modal-trener">
+                    <p class="modal-name-trener">Константин Назаров</p>
+                    <p class="modal-discipline">преподаватель по робототехнике</p>
+                    <div class="contacts">
+                        <a href="#" class="FaceBook">
+                            <img src="Pictures/facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="Instagram">
+                            <img src="Pictures/instagram.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <label for="modal-window-konstantin" class="button-close">Закрыть</label>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown_button">
+                  <p>Образование</p>
+                  <img src="Pictures/drop-dawn-arrow.svg" alt="" class="arrow">
+                </button>
+                <div class="dropdown-content">
+                  <p>Образование</p>
+                  <p>Тренинги</p>
+                  <p>Курсы</p>
+                </div>
+            </div>
+            <div class="modal-nav">
+                <a href="#" class="modal-link-education">Образование</a>
+                <a href="#" class="modal-link-work-experience">Опыт работы</a>
+                <a href="#" class="modal-link-awards">Награды</a>
+            </div>
+            <div class="modal-section">
+                <div class="modal-section-text-one">
+                    <p>Сентябрь 1995 — Июнь 2000</p>
+                    <p>Санкт-Петербургский политехнический университет Петра Великого</p>
+                    <p>Факультет: Компьютерных наук и технологий</p>
+                    <p>Специальность: Математика и компьютерные науки</p>
+                    <p>Форма обучения: Очная</p>
+                </div>
+                <p class="modal-section-title">Курсы и тренниги</p>
+                <div class="modal-section-text-two">
+                    <p>Ноябрь 2020 — Февраль 2021</p>
+                    <p>Программа дополнительного образования «3D Моделирование»</p>
+                    <p>Место проведения: Институт дополнительного образования «Политех»</p>
+                    <p>1. Дополнительный текст: для теста скролл-бара</p>
+                    <p>2. Дополнительный текст: для теста скролл-бара</p>
+                    <p>3. Дополнительный текст: для теста скролл-бара</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="modal-window-liza" class="modal-switch-liza" onclick="scroll_bar()">
+    <div class="modal">
+        <div class="modal-window">
+            <div class="hidden-close">
+                <label for="modal-window-liza" class="hidden-close-button">&#10006;</label>
+            </div>
+            <div class="modal-header">
+                <div class="modal-image">
+                    <img src="Pictures/liza.png" alt="">
+                </div>
+                <div class="modal-trener">
+                    <p class="modal-name-trener">Лиза Весенняя</p>
+                    <p class="modal-discipline">преподаватель по программированию</p>
+                    <div class="contacts">
+                        <a href="#" class="FaceBook">
+                            <img src="Pictures/facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="Instagram">
+                            <img src="Pictures/instagram.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <label for="modal-window-liza" class="button-close">Закрыть</label>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown_button">
+                  <p>Образование</p>
+                  <img src="Pictures/drop-dawn-arrow.svg" alt="" class="arrow">
+                </button>
+                <div class="dropdown-content">
+                  <p>Образование</p>
+                  <p>Тренинги</p>
+                  <p>Курсы</p>
+                </div>
+            </div>
+            <div class="modal-nav">
+                <a href="#" class="modal-link-education">Образование</a>
+                <a href="#" class="modal-link-work-experience">Опыт работы</a>
+                <a href="#" class="modal-link-awards">Награды</a>
+            </div>
+            <div class="modal-section">
+                <div class="modal-section-text-one">
+                    <p>Сентябрь 1995 — Июнь 2000</p>
+                    <p>Санкт-Петербургский политехнический университет Петра Великого</p>
+                    <p>Факультет: Компьютерных наук и технологий</p>
+                    <p>Специальность: Математика и компьютерные науки</p>
+                    <p>Форма обучения: Очная</p>
+                </div>
+                <p class="modal-section-title">Курсы и тренниги</p>
+                <div class="modal-section-text-two">
+                    <p>Ноябрь 2020 — Февраль 2021</p>
+                    <p>Программа дополнительного образования «3D Моделирование»</p>
+                    <p>Место проведения: Институт дополнительного образования «Политех»</p>
+                    <p>1. Дополнительный текст: для теста скролл-бара</p>
+                    <p>2. Дополнительный текст: для теста скролл-бара</p>
+                    <p>3. Дополнительный текст: для теста скролл-бара</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
