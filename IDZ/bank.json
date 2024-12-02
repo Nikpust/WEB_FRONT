@@ -1,0 +1,7 @@
+{
+    "111111": { "name": "Сбер", "backgroundColor": "#1F9F37", "textColor": "#141024" },
+    "222222": { "name": "Тинькофф", "backgroundColor": "#FFDD2D", "textColor": "#141024" },
+    "333333": { "name": "Альфа-Банк", "backgroundColor": "#EF3124", "textColor": "#FFFFFF" },
+    "444444": { "name": "Газпромбанк", "backgroundColor": "#476BF0", "textColor": "#141024" },
+    "555555": { "name": "ВТБ", "backgroundColor": "#022192", "textColor": "#FFFFFF" }
+}

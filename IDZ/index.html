@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDZ</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body onload="load_data()">
+    <div id="loader">
+        <div class="spiner-cook">
+            <img src="Pictures/cook.png" alt="">
+        </div>
+    </div>
+
+    <div class="section-one">
+        <p class="text-logo">LOGO</p>
+        <div class="card-one">
+            <p class="title-card-one">Email Template</p>
+            <img src="Pictures/img-1.png" alt="" class="picture-rotate">
+            <p class="text-card-one">Boost your emails with Blush! Create dope emails easy and fast!  Install the Blush plugin to customize all the illustrations!</p>
+            <button class="button" onclick="hidden_modal_on()">Try it now!</button>
+        </div>
+    </div>
+
+    <div class="section-two">
+        <div class="card">
+            <img src="Pictures/img-2.png" alt="" class="picture-rotate">
+            <p class="title-card">Customize this email template!</p>
+            <p class="text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum mattis nisi mauris pharetra ullamcorper.</p>
+            <button class="button" onclick="hidden_modal_on()">Try it now!</button>
+        </div>
+        <div class="card">
+            <img src="Pictures/img-3.png" alt="" class="picture-rotate">
+            <p class="title-card">Customize this email template!</p>
+            <p class="text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum mattis nisi mauris pharetra ullamcorper.</p>
+            <button class="button" onclick="hidden_modal_on()">Try it now!</button>
+        </div>
+    </div>
+
+    <div class="section-three">
+        <img src="Pictures/img-4.png" alt="" class="picture-rotate">
+        <p class="title-card">Customize this email template!</p>
+        <p class="text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum mattis nisi mauris pharetra ullamcorper.</p>
+        <button class="button" onclick="hidden_modal_on()">Try it now!</button>
+    </div>
+
+    <div class="section-four">
+        <div class="card">
+            <img src="Pictures/img-5.png" alt="" class="picture-rotate">
+            <p class="title-card">Customize this email template!</p>
+            <p class="text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum mattis nisi mauris pharetra ullamcorper.</p>
+            <button class="button" onclick="hidden_modal_on()">Try it now!</button>
+        </div>
+        <div class="card">
+            <img src="Pictures/img-6.png" alt="" class="picture-rotate">
+            <p class="title-card">Customize this email template!</p>
+            <p class="text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum mattis nisi mauris pharetra ullamcorper.</p>
+            <button class="button" onclick="hidden_modal_on()">Try it now!</button>
+        </div>
+    </div>
+
+    <div class="section-five">
+        <p class="text-one">
+            Boost your emails with Blush! Create dope emails easy and fast! Install the Blush plugin to customize all the illustrations! 
+        </p>
+        <p class="text-two">
+            Create the coolest emails!
+        </p>
+    </div>
+
+    <div class="border"></div>
+
+    <footer>
+        <p class="footer-text">Corporation</p>
+        <p class="footer-text">You are receiving this email because you opted in via our website.</p>
+        <div class="contacts">
+            <a href="#"><img src="Pictures/twitter.svg" alt=""></a>
+            <a href="#"><img src="Pictures/instagram.svg" alt=""></a>
+            <a href="#"><img src="Pictures/youtube.svg" alt=""></a>
+            <a href="#"><img src="Pictures/dribbble.svg" alt=""></a>
+            <a href="#"><img src="Pictures/last.svg" alt=""></a>
+        </div>
+        <p class="footer-text-2">Address, #PC City, State.</p>
+        <p class="footer-text-2-underline">Unsubscribe</p>
+        <p class="footer-last-text">LOGO</p>
+    </footer>
+
+    <div id="modal" class="hidden">
+        <div class="modal-window">
+            <div class="hidden-close">
+                <p id="bank-name">Банк: не опредлен</p>
+                <label class="hidden-close-button" onclick="hidden_modal_off()">&#10006;</label>
+            </div>
+            <form id="payment-form">
+                <input type="text" placeholder="Номер карты" id="form-nnumbercard" required>
+                <input type="text" placeholder="MM/YY" id="date" required>
+                <input type="text" placeholder="Code" id="code" required>
+                <div class="container">
+                    <div class="dropdown">
+                        <button class="dropdown-button" onclick="toggle_dropdown(event)">
+                            <span id="selected-option">Базовый</span>
+                            <img src="Pictures/arrow.svg" alt="" class="arrow">
+                        </button>
+                        <div class="dropdown-content" id="dropdown-menu">
+                            <a href="#" onclick="select_option('Базовый')">Базовый</a>
+                            <a href="#" onclick="select_option('Средний')">Средний</a>
+                            <a href="#" onclick="select_option('Премиум')">Премиум</a>
+                        </div>
+                    </div>
+                    <button type="submit" id="cost">Оплатить: 100$</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
