@@ -1,0 +1,69 @@
+@media (width < 770px) {
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .menu a {
+        justify-content: center;
+    }
+
+    .dropdown-button {
+        justify-content: space-between;
+    }
+
+    .dropdown-content {
+        width: 100%;
+    }
+}
+
+@media (width < 630px) {
+    .menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu a:first-child {
+        border-radius: 10px 0px 0px 0px;
+    }
+
+    .menu a:nth-child(2) {
+        border-radius: 0px 10px 0px 0px;
+    }
+    
+    .menu a:nth-child(3) {
+        border-radius: 0px 0px 0px 10px;
+    }
+    
+    .menu a:last-child {
+        border-radius: 0px 0px 10px 0px;
+    }
+
+    main {
+        grid-template-columns: repeat(auto-fill, minmax(299px, 1fr));
+    }
+    
+    article {
+        padding: 20px 15px;
+    }
+
+    .card-header {
+        font-size: 13px;
+        line-height: 20px;
+        padding-bottom: 14px;
+    }
+
+    .text-title-news {
+        font-size: 21px;
+        line-height: 28px;
+    }
+
+    .text-description-news {
+        font-size: 15px;
+        line-height: 24px;
+    }
+}

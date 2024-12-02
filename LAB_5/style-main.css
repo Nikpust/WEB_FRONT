@@ -1,0 +1,71 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(376px, 1fr));
+    justify-content: center;
+    gap: 30px;
+    margin: 0% 8.35% 5% 8.35%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(234, 236, 240);
+    border-radius: 10px;
+    aspect-ratio: 376 / 600;
+    padding: 25px 20px;
+    overflow: hidden;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+article:hover {
+    background-color: #F2F4F7;
+    transform: scale(1.05);
+}
+
+.card-header {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    color: rgb(102, 112, 133);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 14px;
+}
+
+.picture {
+    aspect-ratio: 320 / 225;
+}
+
+.picture img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.title-news, .description-news {
+    padding-top: 15px;
+}
+
+.description-news {
+    overflow: hidden;
+}
+
+.text-title-news {
+    color: rgb(13, 20, 33);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: justify;
+}
+
+.text-description-news {
+    color: rgb(53, 65, 83);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 20px;
+    text-align: justify;
+}

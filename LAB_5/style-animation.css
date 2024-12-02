@@ -1,0 +1,26 @@
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes slide_left {
+    0% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
+
+@keyframes slide_right {
+    0% { transform: translateX(200%); }
+    100% { transform: translateX(0%); }
+}
+
+@keyframes slide_up {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0%); }
+}
+
+@keyframes for_article {
+    100% {
+        background-color: #F2F4F7;
+        transform: scale(1.05);
+    }
+}

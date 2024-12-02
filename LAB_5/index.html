@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARIANT-5</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-loader.css">
+    <link rel="stylesheet" href="style-header.css">
+    <link rel="stylesheet" href="style-nav.css">
+    <link rel="stylesheet" href="style-main.css">
+    <link rel="stylesheet" href="style-footer.css">
+    <link rel="stylesheet" href="style-adaptive.css">
+    <link rel="stylesheet" href="style-animation.css">
+</head>
+<body onload="Load_Data()">
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <div class="header-information">
+            <div class="variant">
+                <div class="variant-svg">
+                    <img src="Pictures/logo.svg" alt="">
+                </div>
+                <div class="variant-text">
+                    <p>Вариант 5</p>
+                </div>
+            </div>
+            <a class="header-icon" href="#">
+                <img src="Pictures/icon.svg" alt="logotip">
+            </a>
+        </div>
+    </header>
+
+    <nav>
+        <div class="menu">
+            <a href="#" onclick="Select_News('Все новости')">Все новости</a>
+            <a href="#" onclick="Select_News('Экономика')">Экономика</a>
+            <a href="#" onclick="Select_News('Спорт')">Спорт</a>
+            <a href="#" onclick="Select_News('Общество')">Общество</a>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-button" onclick="Toggle_Dropdown()">
+                <span id="selected-option">По умолчанию</span>
+                <img src="Pictures/arrow.svg" alt="" class="arrow">
+            </button>
+            <div class="dropdown-content" id="dropdown-menu">
+                <a href="#" onclick="Select_Option('По умолчанию')">По умолчанию</a>
+                <a href="#" onclick="Select_Option('Сначала новые')">Сначала новые</a>
+                <a href="#" onclick="Select_Option('Сначала старые')">Сначала старые</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="cards-container"></main>
+
+    <footer>
+        <p>
+            &copy; Вариант 5. Клименко Никита, группа ПИ-22-1
+        </p>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>
